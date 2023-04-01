@@ -58,9 +58,12 @@ export default function BITSPilani() {
                 </div>
                 <div className='bottom-header'>
                     <b className='insti'>Birla Institute of Technology and Science, Pilani</b>
-                    <div className='day-night-toggle'>
+                    <div className='light-dark-toggle'>
                         day/night
-                        <input type='checkbox' checked data-toggle='toggle'></input>
+                        <label class='switch'>
+                            <input type='checkbox' />
+                            <span class='slider round'></span>
+                        </label>
                     </div>
                 </div>
             </section>
