@@ -3,6 +3,13 @@ import "./App.css";
 
 import wikiLogo from "./images/wiki-globe.png";
 import googleplay from './images/footer/google_play.png';
+import wiki_w from './images/footer/wiki-w.png';
+// import wikimedia from './images/footer/wikimedia-found.png';
+// import commons from './images/other-wikis/commons.png';
+// import mediawiki from './images/other-wikis/metawiki.png';
+// import wikibooks from './images/other-wikis/wikibooks.png';
+// import wikinews from './images/other-wikis/wikinews.png';
+// import wikiquote from './images/other-wikis/wikiquote.png';
 
 
 
