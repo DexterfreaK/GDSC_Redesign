@@ -1,7 +1,97 @@
 import wikiLogo from './images/wiki-globe.png';
 import googleplay from './images/footer/google_play.png';
+import appstore from './images/footer/app-store.png';
+import wiki_w from './images/footer/wiki-w.png';
+import wiki_media from './images/footer/wikimedia-found.png';
+import commons from './images/other-wikis/commons.png';
+import mediawiki from './images/other-wikis/mediawiki.png';
+import metawiki from './images/other-wikis/metawiki.png';
+import wikibooks from './images/other-wikis/wikibooks.png';
+import wikivoyage from './images/other-wikis/wikivoyage.png';
+import wiktionary from './images/other-wikis/wiktionary.png';
+import wikidata from './images/other-wikis/wikidata.png';
+import wikinews from './images/other-wikis/wikinews.png';
+import wikiquote from './images/other-wikis/wikiquote.png';
+import wikisource from './images/other-wikis/wikisource.png';
+import wikispecies from './images/other-wikis/wikispecies.png';
+import wikiversity from './images/other-wikis/wikiversity.png';
 
 export default function Homepage() {
+
+
+    const langList = [
+        {
+            lang: 'English',
+            articles: '6 585 000+ articles',
+            langCode: 'en',
+            langTitle: 'English',
+        },
+        {
+            lang: 'Русский',
+            articles: '1 874 000+ статей',
+            langCode: 'ru',
+            langTitle: 'Русский',
+        },
+        {
+            lang: 'Deutsch',
+            articles: '2 749 000+ Artikel',
+            langCode: 'de',
+            langTitle: 'Deutsch',
+        },
+        {
+            lang: 'Italiano',
+            articles: '1 785 000+ voci',
+            langCode: 'it',
+            langTitle: 'Italiano',
+        },
+        {
+            lang: 'فارسی',
+            articles: 'مقاله 000 940+',
+            langCode: 'fa',
+            langTitle: 'فارسی',
+        },
+        {
+            lang: '日本語',
+            articles: '1 353 000+ 記事',
+            langCode: 'ja',
+            langTitle: '日本語',
+        },
+        {
+            lang: 'Français',
+            articles: '2 476 000+ articles',
+            langCode: 'fr',
+            langTitle: 'Français',
+        },
+        {
+            lang: 'Español',
+            articles: '1 822 000+ artículos',
+            langCode: 'es',
+            langTitle: 'Español',
+
+        },
+        {
+            lang: '中文',
+            articles: '1 322 000+ 条目 / 條目',
+            langCode: 'zh',
+            langTitle: '中文',
+        },
+        {
+            lang: 'Português',
+            articles: '1 096 000+ artigos',
+            langCode: 'pt',
+            langTitle: 'Português',
+        }
+    ]
+    const megalanglist = 
+    [
+        "Polski",
+        "العربية",
+        "Deutsch",
+        "English",
+        "Español",
+        "Français",
+        
+    ]
     return (
         <body>
             <header>
@@ -19,55 +109,16 @@ export default function Homepage() {
             <main>
                 <div id='graphic-box'>
                     <div id='languages-graphic'>
-                        <a href='#' class='language-box'>
-                            <div class='lang-heading'>English</div>
-                            <div class='lang-articles'>6 585 000+ articles</div>
-                        </a>
-
-                        <a href='#' class='language-box'>
-                            <div class='lang-heading'>Русский</div>
-                            <div class='lang-articles'>1 874 000+ статей</div>
-                        </a>
-
-                        <a href='#' class='language-box'>
-                            <div class='lang-heading'>Deutsch</div>
-                            <div class='lang-articles'>2 749 000+ Artikel</div>
-                        </a>
-
-                        <a href='#' class='language-box'>
-                            <div class='lang-heading'>Italiano</div>
-                            <div class='lang-articles'>1 785 000+ voci</div>
-                        </a>
-
-                        <a href='#' class='language-box'>
-                            <div class='lang-heading'>فارسی</div>
-                            <div class='lang-articles'>مقاله 000 940+</div>
-                        </a>
-
-                        <a href='#' class='language-box'>
-                            <div class='lang-heading'>日本語</div>
-                            <div class='lang-articles'>1 353 000+ 記事</div>
-                        </a>
-
-                        <a href='#' class='language-box'>
-                            <div class='lang-heading'>Français</div>
-                            <div class='lang-articles'>2 476 000+ articles</div>
-                        </a>
-
-                        <a href='#' class='language-box'>
-                            <div class='lang-heading'>Español</div>
-                            <div class='lang-articles'>1 822 000+ artículos</div>
-                        </a>
-
-                        <a href='#' class='language-box'>
-                            <div class='lang-heading'>中文</div>
-                            <div class='lang-articles'>1 322 000+ 条目 / 條目</div>
-                        </a>
-
-                        <a href='#' class='language-box'>
-                            <div class='lang-heading'>Português</div>
-                            <div class='lang-articles'>1 096 000+ artigos</div>
-                        </a>
+                    {
+                        langList.map((lang,i) => {
+                            return (
+                                <a href='#' class='language-box' key={i}>
+                                    <div class='lang-heading'>{lang.lang}</div>
+                                    <div class='lang-articles'>{lang.articles}</div>
+                                </a>
+                            )
+                        })
+                    }
                     </div>
                 </div>
 
@@ -1588,7 +1639,8 @@ export default function Homepage() {
                 <div id='link-box'>
                     <div id='wiki-found'>
                         <div class='wiki-found-img-cont'>
-                            <img src='images\footer\wikimedia-found.png' alt='wiki-foundation' />
+                        <img src={wiki_media} />
+                            {/* <img src='images\footer\wikimedia-found.png' alt='wiki-foundation' /> */}
                         </div>
                         <div class='wiki-found-text-cont'>
                             Wikipedia is hosted by the Wikimedia Foundation, a non-profit organization that also hosts a
@@ -1599,7 +1651,8 @@ export default function Homepage() {
                     </div>
                     <div id='wiki-download'>
                         <div class='download-img-cont'>
-                            <img src='images\footer\wiki-w.png' alt='wiki-w' />
+                            <img src={wiki_w} />
+                            {/* <img src='images\footer\wiki-w.png' alt='wiki-w' /> */}
                         </div>
                         <div class='download-text-cont'>
                             <div id='download-heading'>Download Wikipedia for Android or iOS</div>
@@ -1609,14 +1662,18 @@ export default function Homepage() {
                             </div>
                             <div id='download-btn-cont'>
                                 <img src={googleplay} />
-                                <img src='/images/footer/app-store.png' />
+                                {/* <img src='/images/footer/app-store.png' /> */}
+                            </div>
+                            <div id='download-btn-cont'>
+                                <img src={appstore} />
                             </div>
                         </div>
                     </div>
 
                     <div id='wiki-apps'>
                         <div class='app-cont'>
-                            <img src='images/other-wikis/commons.png' alt='commons' class='app-icon' />
+                            {/* <img src='images/other-wikis/commons.png' alt='commons' class='app-icon' /> */}
+                            <img src={commons} />
                             <div class='app-info'>
                                 <div class='app-name'>Commons</div>
                                 <div class='app-desc'>Freely usable photos & more</div>
@@ -1624,7 +1681,8 @@ export default function Homepage() {
                         </div>
 
                         <div class='app-cont'>
-                            <img src='images/other-wikis/wikivoyage.png' alt='voyage' class='app-icon' />
+                            {/* <img src='images/other-wikis/wikivoyage.png' alt='voyage' class='app-icon' /> */}
+                            <img src={wikivoyage} />
                             <div class='app-info'>
                                 <div class='app-name'>Wikivoyage</div>
                                 <div class='app-desc'>Free travel guide</div>
@@ -1632,7 +1690,8 @@ export default function Homepage() {
                         </div>
 
                         <div class='app-cont'>
-                            <img src='images/other-wikis/wiktionary.png' alt='wiktionary' class='app-icon' />
+                        <img src={wiktionary} />
+                            {/* <img src='images/other-wikis/wiktionary.png' alt='wiktionary' class='app-icon' /> */}
                             <div class='app-info'>
                                 <div class='app-name'>Wiktionary</div>
                                 <div class='app-desc'>Free Dictionary</div>
@@ -1640,7 +1699,8 @@ export default function Homepage() {
                         </div>
 
                         <div class='app-cont'>
-                            <img src='images/other-wikis/wikibooks.png' alt='wikibooks' class='app-icon' />
+                            {/* <img src='images/other-wikis/wikibooks.png' alt='wikibooks' class='app-icon' /> */}
+                            <img src={wikibooks} />
                             <div class='app-info'>
                                 <div class='app-name'>Wikibooks</div>
                                 <div class='app-desc'>Free textbooks</div>
@@ -1648,7 +1708,8 @@ export default function Homepage() {
                         </div>
 
                         <div class='app-cont'>
-                            <img src='images/other-wikis/wikinews.png' alt='wikinews' class='app-icon' />
+                            {/* <img src='images/other-wikis/wikinews.png' alt='wikinews' class='app-icon' /> */}
+                            <img src={wikinews} />
                             <div class='app-info'>
                                 <div class='app-name'>Wikinews</div>
                                 <div class='app-desc'>Free news source</div>
@@ -1656,7 +1717,8 @@ export default function Homepage() {
                         </div>
 
                         <div class='app-cont'>
-                            <img src='images/other-wikis/wikidata.png' alt='wikidata' class='app-icon' />
+                            {/* <img src='images/other-wikis/wikidata.png' alt='wikidata' class='app-icon' /> */}
+                            <img src={wikidata} />
                             <div class='app-info'>
                                 <div class='app-name'>Wikidata</div>
                                 <div class='app-desc'>Free knowledge base</div>
@@ -1664,7 +1726,8 @@ export default function Homepage() {
                         </div>
 
                         <div class='app-cont'>
-                            <img src='images/other-wikis/wikiversity.png' alt='wikiversity' class='app-icon' />
+                        <img src={wikiversity} />
+                            {/* <img src='images/other-wikis/wikiversity.png' alt='wikiversity' class='app-icon' /> */}
                             <div class='app-info'>
                                 <div class='app-name'>Wikiversity</div>
                                 <div class='app-desc'>Free course materials</div>
@@ -1672,7 +1735,8 @@ export default function Homepage() {
                         </div>
 
                         <div class='app-cont'>
-                            <img src='images/other-wikis/wikiquote.png' alt='wikiquote' class='app-icon' />
+                        <img src={wikiquote} />
+                            {/* <img src='images/other-wikis/wikiquote.png' alt='wikiquote' class='app-icon' /> */}
                             <div class='app-info'>
                                 <div class='app-name'>Wikiquote</div>
                                 <div class='app-desc'>Free quote compendium</div>
@@ -1680,7 +1744,8 @@ export default function Homepage() {
                         </div>
 
                         <div class='app-cont'>
-                            <img src='images/other-wikis/mediawiki.png' alt='mediawiki' class='app-icon' />
+                        <img src={mediawiki} />
+                            {/* <img src='images/other-wikis/mediawiki.png' alt='mediawiki' class='app-icon' /> */}
                             <div class='app-info'>
                                 <div class='app-name'>MediaWiki</div>
                                 <div class='app-desc'>Free & open wiki application</div>
@@ -1688,7 +1753,8 @@ export default function Homepage() {
                         </div>
 
                         <div class='app-cont'>
-                            <img src='images/other-wikis/wikisource.png' alt='wikisource' class='app-icon' />
+                        <img src={wikisource} />
+                            {/* <img src='images/other-wikis/wikisource.png' alt='wikisource' class='app-icon' /> */}
                             <div class='app-info'>
                                 <div class='app-name'>Wikisource</div>
                                 <div class='app-desc'>Free library</div>
@@ -1696,7 +1762,8 @@ export default function Homepage() {
                         </div>
 
                         <div class='app-cont'>
-                            <img src='images/other-wikis/wikispecies.png' alt='wikispecies' class='app-icon' />
+                        <img src={wikispecies} />
+                            {/* <img src='images/other-wikis/wikispecies.png' alt='wikispecies' class='app-icon' /> */}
                             <div class='app-info'>
                                 <div class='app-name'>Wikispecies</div>
                                 <div class='app-desc'>Free species directory</div>
@@ -1704,7 +1771,8 @@ export default function Homepage() {
                         </div>
 
                         <div class='app-cont'>
-                            <img src='images/other-wikis/metawiki.png' alt='metawiki' class='app-icon' />
+                        <img src={metawiki} />
+                            {/* <img src='images/other-wikis/metawiki.png' alt='metawiki' class='app-icon' /> */}
                             <div class='app-info'>
                                 <div class='app-name'>Meta-wiki</div>
                                 <div class='app-desc'>Community coordination and documentation</div>
