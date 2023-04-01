@@ -77,9 +77,9 @@ export default function BITSPilani() {
           >
             <div className="bottom-header d-flex">
               <Box sx={{ width: "25vw" }} />
-              <h2 className="font-weight-bold">
+              <Box sx={{ fontWeight: "600", fontSize: "3.5vh" }}>
                 Birla Institute of Technology and Science, Pilani
-              </h2>
+              </Box>
               <Box
                 sx={{
                   width: "25vw",
@@ -113,9 +113,11 @@ export default function BITSPilani() {
               borderColor: "#EAECF0",
             }}
           >
-            <Box sx={{ m: "3vh", fontWeight: "600", fontSize:'2vh' }}>Contents</Box>
+            <Box sx={{ m: "3vh", fontWeight: "600", fontSize: "2vh" }}>
+              Contents
+            </Box>
             <Divider />
-            <Box sx={{ color: "#3366CC80" }}>
+            <Box>
               <Box>
                 <Box sx={{ p: "3vh", fontWeight: "600" }} className="booobies">
                   <Box
@@ -128,7 +130,7 @@ export default function BITSPilani() {
                       borderRadius: "50%",
                     }}
                   />
-                  Campuses
+                  <Box className="text_bo">Campuses</Box>
                 </Box>
               </Box>
               <Box>
@@ -143,7 +145,7 @@ export default function BITSPilani() {
                       borderRadius: "50%",
                     }}
                   />
-                  Academics
+                  <Box className="text_bo">Academics</Box>
                 </Box>
               </Box>
               <Box>
@@ -158,7 +160,7 @@ export default function BITSPilani() {
                       borderRadius: "50%",
                     }}
                   />
-                  Student Life
+                  <Box className="text_bo">Student Life</Box>
                 </Box>
               </Box>
               <Box>
@@ -173,7 +175,7 @@ export default function BITSPilani() {
                       borderRadius: "50%",
                     }}
                   />
-                  Alumni
+                  <Box className="text_bo">Alumni</Box>
                 </Box>
               </Box>
             </Box>

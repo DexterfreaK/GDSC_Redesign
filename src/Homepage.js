@@ -18,7 +18,8 @@ import wikiversity from "./images/other-wikis/wikiversity.png";
 import { Divider, Box } from "@mui/material";
 import TextField from "@mui/material/TextField";
 import SearchIcon from "@mui/icons-material/Search";
-import { useState } from "react";
+import { useEffect, useLayoutEffect, useState } from "react";
+import TagCloud from "TagCloud";
 
 export default function Homepage() {
   const langList = [
@@ -92,10 +93,51 @@ export default function Homepage() {
     "Français",
   ];
 
+  const myTags = [
+
+    "English 6 629 000+ articles",
+    "Русский 1 900 000+ статей",
+    "Español 1 846 000+ artículos",
+    "日本語 1 366 000+ 記事",
+    "Deutsch 2 781 000+ Artikel",
+    "Français 2 504 000+ articles",
+    "Italiano 1 801 000+ voci",
+    "中文 1 340 000+ 条目 / 條目",
+    "Português 1 102 000+ artigos",
+    "العربية 1 202 000+",
+  ];
+
+  useLayoutEffect(() => {
+    var tagCloud = TagCloud(".content", myTags, {
+      // radius in px
+      radius: 280,
+
+      // animation speed
+      // slow, normal, fast
+      maxSpeed: "fast",
+      initSpeed: "fast",
+
+      // 0 = top
+      // 90 = left
+      // 135 = right-bottom
+      direction: 135,
+
+      // interact with cursor move on mouse out
+      keep: true,
+    });
+    document.querySelector(".content").style.color = "#3366CC";
+
+  }, []);
+
   const [dark, setdark] = useState(false);
 
   return (
     <body>
+      <Box sx={{ position: "absolute", top: "15vh", left: "30vw" }}>
+        <Box sx={{ height: "600px ", overflow: "hidden" ,width:'600px'}}>
+          <span class="content" />
+        </Box>
+      </Box>
       <Box
         sx={{
           height: "100vh",
@@ -125,7 +167,6 @@ export default function Homepage() {
               <span class="slider round"></span>
             </label>
           </div>
-          {console.log(dark)}
         </Box>
         <Box sx={{ height: "25vh", display: "flex", justifyContent: "center" }}>
           <Box
@@ -151,6 +192,7 @@ export default function Homepage() {
             </Box>
           </Box>
         </Box>
+
         <Box sx={{ display: "flex", justifyContent: "center" }}>
           <Box
             sx={{
