@@ -1,12 +1,17 @@
-
 import "./App.css";
+
+
+import wikiLogo from "./images/wiki-globe.png";
+import googleplay from './images/footer/google_play.png';
+
+
 
 function App() {
   return (
     <body>
       <header>
         <div class="header-img-cont">
-          <img src="images/wiki-globe.png" />
+          <img src={wikiLogo} />
         </div>
         <div id="title-container">
           <div id="main-heading">
@@ -1614,8 +1619,8 @@ function App() {
                 the official Wikipedia app.
               </div>
               <div id="download-btn-cont">
-                <img src="images/footer/google-play.png" />
-                <img src="images/footer/app-store.png" />
+                <img src={googleplay} />
+                <img src="/images/footer/app-store.png" />
               </div>
             </div>
           </div>
