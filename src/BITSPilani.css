@@ -1,0 +1,44 @@
+.main {
+    display: grid;
+    grid-template-rows: 1fr 7fr;
+}
+
+.header {
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    row-gap: 2rem;
+}
+
+.top-header {
+    display: flex;
+    flex-direction: row;
+    column-gap: 2rem;
+    align-items: center;
+}
+
+header {
+    align-items: center !important;
+    height: fit-content !important;
+    column-gap: 1em !important;
+}
+
+.header-img-cont {
+    height: 100%;
+    width: 100%;
+    display: block !important;
+}
+
+#title-container {
+    margin: 0 !important;
+}
+
+.bottom-header {
+    display: flex;
+    flex-direction: row;
+}
+
+.insti {
+    margin-left: auto;
+    margin-right: auto;
+}
