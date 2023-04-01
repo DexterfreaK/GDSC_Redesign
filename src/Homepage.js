@@ -1,5 +1,7 @@
 import wikiLogo from './images/wiki-globe.png';
 import googleplay from './images/footer/google_play.png';
+import wiki_w from './images/footer/wiki-w.png';
+import wiki_media from './images/footer/wiki-media.png';
 
 export default function Homepage() {
     return (
@@ -1599,6 +1601,7 @@ export default function Homepage() {
                     </div>
                     <div id='wiki-download'>
                         <div class='download-img-cont'>
+                            <img src={wiki_w} />
                             <img src='images\footer\wiki-w.png' alt='wiki-w' />
                         </div>
                         <div class='download-text-cont'>
