@@ -1,3 +1,74 @@
+.img1 {
+  background-position: 0 -126px;
+  width: 37px;
+  height: 37px;
+}
+.img2{
+  background-position: 0 -126px;
+  width: 37px;
+  height: 37px;
+}
+.img3{
+  background-position: 0 -163px;
+  width: 34px;
+  height: 23px;
+}
+.img4{
+  background-position: 0 0;
+  width: 47px;
+  height: 47px;
+}
+.img5{
+  background-position: 0 -446px;
+  width: 36px;
+  height: 36px;
+}
+.img6{
+  background-position: 0 -482px;
+  width: 37px;
+  height: 37px;
+}
+.img7{
+  background-position: 0 -409px;
+  width: 43px;
+  height: 37px;
+}
+.img8{
+  background-position: 0 -286px;
+  width: 42px;
+  height: 42px;
+}
+.img9{
+  background-position: 0 -47px;
+  width: 42px;
+  height: 42px;
+}
+.img10{
+  background-position: 0 -328px;
+  width: 39px;
+  height: 39px;
+}
+.img11 {
+  background-position: 0 -367px;
+  width: 42px;
+  height: 42px;
+}
+.img12 {
+  background-position: 0 -89px;
+  width: 37px;
+  height: 37px;
+}
+
+.img13{
+  background-position: 0 -719px;
+  width: 24px;
+  height: 24px;
+}
+.img14{
+  background-position: 0 -719px;
+  width: 42px;
+  height: 42px;
+}
 .App {
   text-align: center;
 }
