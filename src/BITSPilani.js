@@ -113,20 +113,68 @@ export default function BITSPilani() {
               borderColor: "#EAECF0",
             }}
           >
-            <Box sx={{ m: "2vh", fontWeight: "600" }}>Contents</Box>
+            <Box sx={{ m: "3vh", fontWeight: "600", fontSize:'2vh' }}>Contents</Box>
             <Divider />
             <Box sx={{ color: "#3366CC80" }}>
               <Box>
-                <Box sx={{ p: "3vh", fontWeight: "600" }}>Campuses</Box>
+                <Box sx={{ p: "3vh", fontWeight: "600" }} className="booobies">
+                  <Box
+                    className="dot"
+                    sx={{
+                      height: "3vh",
+                      width: "3vh",
+                      bgcolor: "#3366CC",
+                      position: "absolute",
+                      borderRadius: "50%",
+                    }}
+                  />
+                  Campuses
+                </Box>
               </Box>
               <Box>
-                <Box sx={{ p: "3vh", fontWeight: "600" }}>Academics</Box>
+                <Box sx={{ p: "3vh", fontWeight: "600" }} className="booobies">
+                  <Box
+                    className="dot"
+                    sx={{
+                      height: "3vh",
+                      width: "3vh",
+                      bgcolor: "#3366CC",
+                      position: "absolute",
+                      borderRadius: "50%",
+                    }}
+                  />
+                  Academics
+                </Box>
               </Box>
               <Box>
-                <Box sx={{ p: "3vh", fontWeight: "600" }}>Student Life</Box>
+                <Box sx={{ p: "3vh", fontWeight: "600" }} className="booobies">
+                  <Box
+                    className="dot"
+                    sx={{
+                      height: "3vh",
+                      width: "3vh",
+                      bgcolor: "#3366CC",
+                      position: "absolute",
+                      borderRadius: "50%",
+                    }}
+                  />
+                  Student Life
+                </Box>
               </Box>
               <Box>
-                <Box sx={{ p: "3vh", fontWeight: "600" }}>Alumni</Box>
+                <Box sx={{ p: "3vh", fontWeight: "600" }} className="booobies">
+                  <Box
+                    className="dot"
+                    sx={{
+                      height: "3vh",
+                      width: "3vh",
+                      bgcolor: "#3366CC",
+                      position: "absolute",
+                      borderRadius: "50%",
+                    }}
+                  />
+                  Alumni
+                </Box>
               </Box>
             </Box>
           </Box>
@@ -158,73 +206,88 @@ export default function BITSPilani() {
               <Box sx={{ m: "3vh" }}>
                 <Box sx={{ fontWeight: "600", fontSize: "24px" }}>Article</Box>
                 <Box sx={{ fontFamily: "arial" }}>
-                  Jorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam
-                  eu turpis molestie, dictum est a, mattis tellus. Sed
-                  dignissim, metus nec fringilla accumsan, risus sem
-                  sollicitudin lacus, ut interdum tellus elit sed risus.
-                  Maecenas eget condimentum velit, sit amet feugiat lectus.
-                  Class aptent taciti sociosqu ad litora torquent per conubia
-                  nostra, per inceptos himenaeos. Praesent auctor purus luctus
-                  enim egestas, ac scelerisque ante pulvinar. Donec ut rhoncus
-                  ex. Suspendisse ac rhoncus nisl, eu tempor urna. Curabitur vel
-                  bibendum lorem. Morbi convallis convallis diam sit amet
-                  lacinia. Aliquam in elementum tellus. Curabitur tempor quis
-                  eros tempus lacinia. Nam bibendum pellentesque quam a
-                  convallis. Sed ut vulputate nisi. Integer in felis sed leo
-                  vestibulum venenatis. Suspendisse quis arcu sem. Aenean
-                  feugiat ex eu vestibulum vestibulum. Morbi a eleifend magna.
-                  Nam metus lacus, porttitor eu mauris a, blandit ultrices nibh.
-                  Mauris sit amet magna non ligula vestibulum eleifend. Nulla
-                  varius volutpat turpis sed lacinia. Nam eget mi in purus
-                  lobortis eleifend. Sed nec ante dictum sem condimentum
-                  ullamcorper quis venenatis nisi. Proin vitae facilisis nisi,
-                  ac posuere leo. Jorem ipsum dolor sit amet, consectetur
-                  adipiscing elit. Etiam eu turpis molestie, dictum est a,
-                  mattis tellus. Sed dignissim, metus nec fringilla accumsan,
-                  risus sem sollicitudin lacus, ut interdum tellus elit sed
-                  risus. Maecenas eget condimentum velit, sit amet feugiat
-                  lectus. Class aptent taciti sociosqu ad litora torquent per
-                  conubia nostra, per inceptos himenaeos. Praesent auctor purus
-                  luctus enim egestas, ac scelerisque ante pulvinar. Donec ut
-                  rhoncus ex. Suspendisse ac rhoncus nisl, eu tempor urna.
-                  Curabitur vel bibendum lorem. Morbi convallis convallis diam
-                  sit amet lacinia. Aliquam in elementum tellus.
+                  Birla Institute of Technology & Science, Pilani (Jhunjhunu)
+                  (BITS Pilani, Jhunjhunu) is a deemed university in Pilani,
+                  Jhunjhunu district, Rajasthan, India.[11] It focuses primarily
+                  on higher education and research in engineering and
+                  sciences.[12] After expansion to a campus in Dubai, it has
+                  become the first international deemed university, spearheading
+                  in science, engineering, management and research with five
+                  established campuses and 15 academic departments. The
+                  institute is backed by the Aditya Birla Group and is one of
+                  the first six institutes to be awarded the Institute of
+                  Eminence status in 2018.[13][14] BITS conducts the All-India
+                  computerized entrance examination, BITSAT (BITS Admission
+                  Test).[15][16] Admission is purely assessed by the BITSAT
+                  examination.[17][18] The fully residential institute is
+                  privately supported.[19] The institute was established in its
+                  present form in 1964.[20] During this period, the institute's
+                  transformation from a regional engineering college to a
+                  national university was backed by G.D. Birla. The university
+                  has expanded its campuses from Pilani (Jhunjhunu) to Sancoale
+                  (South Goa), Hyderabad, Dubai and Mumbai. Through its highly
+                  successful and widespread alumni network spanning globally
+                  across varied fields, BITS Pilani has made a significant
+                  impact on corporates, academia, research, entrepreneurship,
+                  arts and social activism.[21][22]
                 </Box>
               </Box>
               <Box sx={{ m: "3vh" }}>
                 <Box sx={{ fontWeight: "600", fontSize: "24px" }}>History</Box>
                 <Box sx={{ fontFamily: "arial" }}>
-                  Jorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam
-                  eu turpis molestie, dictum est a, mattis tellus. Sed
-                  dignissim, metus nec fringilla accumsan, risus sem
-                  sollicitudin lacus, ut interdum tellus elit sed risus.
-                  Maecenas eget condimentum velit, sit amet feugiat lectus.
-                  Class aptent taciti sociosqu ad litora torquent per conubia
-                  nostra, per inceptos himenaeos. Praesent auctor purus luctus
-                  enim egestas, ac scelerisque ante pulvinar. Donec ut rhoncus
-                  ex. Suspendisse ac rhoncus nisl, eu tempor urna. Curabitur vel
-                  bibendum lorem. Morbi convallis convallis diam sit amet
-                  lacinia. Aliquam in elementum tellus. Curabitur tempor quis
-                  eros tempus lacinia. Nam bibendum pellentesque quam a
-                  convallis. Sed ut vulputate nisi. Integer in felis sed leo
-                  vestibulum venenatis. Suspendisse quis arcu sem. Aenean
-                  feugiat ex eu vestibulum vestibulum. Morbi a eleifend magna.
-                  Nam metus lacus, porttitor eu mauris a, blandit ultrices nibh.
-                  Mauris sit amet magna non ligula vestibulum eleifend. Nulla
-                  varius volutpat turpis sed lacinia. Nam eget mi in purus
-                  lobortis eleifend. Sed nec ante dictum sem condimentum
-                  ullamcorper quis venenatis nisi. Proin vitae facilisis nisi,
-                  ac posuere leo. Jorem ipsum dolor sit amet, consectetur
-                  adipiscing elit. Etiam eu turpis molestie, dictum est a,
-                  mattis tellus. Sed dignissim, metus nec fringilla accumsan,
-                  risus sem sollicitudin lacus, ut interdum tellus elit sed
-                  risus. Maecenas eget condimentum velit, sit amet feugiat
-                  lectus. Class aptent taciti sociosqu ad litora torquent per
-                  conubia nostra, per inceptos himenaeos. Praesent auctor purus
-                  luctus enim egestas, ac scelerisque ante pulvinar. Donec ut
-                  rhoncus ex. Suspendisse ac rhoncus nisl, eu tempor urna.
-                  Curabitur vel bibendum lorem. Morbi convallis convallis diam
-                  sit amet lacinia. Aliquam in elementum tellus.
+                  The Birla Education Trust was founded in 1929; the
+                  intermediate college became a degree college and later offered
+                  postgraduate courses. The masters programme in electronics
+                  began in 1955.[23] Reacting to early criticism about the
+                  project, contemporary advisor Thomas Drew said: In my judgment
+                  to attempt to develop an American institution in India would
+                  be like trying to graft apples on a pine tree. We have not
+                  been asked to make such an attempt. We were asked to help
+                  devise in India an Indian technological school to produce
+                  graduates with the know-how to produce knowledge pertinent for
+                  India…. In many respects they consider us immature, rude,
+                  hypocritical barbarians who in certain respects happened to
+                  hit it lucky. To be viable in India an institution must be
+                  framed with Indian values in mind.[24] BITS Pilani became a
+                  deemed university established under Section 3 of the UGC Act,
+                  1956 by notification No. F.12-23/63.U-2 of 18 June
+                  1964.[25][26] In its formative years, the Institute tied up
+                  with the Massachusetts Institute of Technology (MIT), Boston,
+                  USA.[25] It adopted semester system, modular structure of
+                  courses, continuous and internal evaluation, letter grading
+                  and the likes. It also created linkages with the industries
+                  which yielded structured “Practice School” as an integral
+                  component of education.[25] In 1964, the Birla Colleges of
+                  Humanities, Commerce, Engineering, Pharmacy and Science were
+                  merged to form the Birla Institute of Technology & Science.
+                  The board provided direction in developing a curriculum,
+                  selecting equipment, upgrading the library and recruiting (and
+                  training) an Indian faculty. To quicken the pace of reform he
+                  convinced C. R. Mitra to be the new director of the institute.
+                  Mitra advocated a "practice school" internship program as a
+                  requirement for faculty and students. The Practice School
+                  Program is still a requirement for students in BITS. Low,
+                  gold-colored building seen from green space Clock tower, BITS
+                  Pilani According to Robert Kargon and Stuart Leslie: BITS
+                  offered an opportunity to build a leading technological
+                  university in India responsive to India's goals, to produce
+                  practising engineers who will be in a position to graduate and
+                  to build industries in India, under Indian conditions. With
+                  its emphasis on the Practice School and ties to Indian
+                  industry, it helped educate Indian industrialists along with
+                  Indian engineers who would remain in India, in contrast to
+                  many other engineering colleges in India, most of whose
+                  graduates would leave the country after obtaining their basic
+                  engineering education. The Ford Foundation
+                  Evaluators...proudly noted that the Indian government, despite
+                  having given no direct financial support, was looking to BITS
+                  to provide a model for future development in education in
+                  engineering and science in India.[24] The acceptance rate of
+                  BITS Pilani is 1.47% based on the data of BITSAT 2012.[27]
+                  Like Berkeley, BITS Pilani has also experienced student
+                  activism. BITS Pilani had to be shut down multiple times
+                  because of student strikes during 1973, 1980, and
+                  1985.[28][29]
                 </Box>
               </Box>
             </Box>
@@ -264,11 +327,15 @@ export default function BITSPilani() {
             </Box>
             <Divider sx={{ bgcolor: "black", color: "black" }} />
             <Box
-            as="img"
-            src="https://upload.wikimedia.org/wikipedia/commons/f/ff/BITS-Pilani_campus_aerial_view.jpg"
-            height="15vw"
-
-            sx={{display:'flex', justifyContent:'center', alignItems:'center', p:'1vw'}}
+              as="img"
+              src="https://upload.wikimedia.org/wikipedia/commons/f/ff/BITS-Pilani_campus_aerial_view.jpg"
+              height="15vw"
+              sx={{
+                display: "flex",
+                justifyContent: "center",
+                alignItems: "center",
+                p: "1vw",
+              }}
             />
           </Box>
         </Box>
