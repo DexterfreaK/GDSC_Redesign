@@ -4,6 +4,81 @@ import wiki_w from './images/footer/wiki-w.png';
 import wiki_media from './images/footer/wiki-media.png';
 
 export default function Homepage() {
+
+
+    const langList = [
+        {
+            lang: 'English',
+            articles: '6 585 000+ articles',
+            langCode: 'en',
+            langTitle: 'English',
+        },
+        {
+            lang: 'Русский',
+            articles: '1 874 000+ статей',
+            langCode: 'ru',
+            langTitle: 'Русский',
+        },
+        {
+            lang: 'Deutsch',
+            articles: '2 749 000+ Artikel',
+            langCode: 'de',
+            langTitle: 'Deutsch',
+        },
+        {
+            lang: 'Italiano',
+            articles: '1 785 000+ voci',
+            langCode: 'it',
+            langTitle: 'Italiano',
+        },
+        {
+            lang: 'فارسی',
+            articles: 'مقاله 000 940+',
+            langCode: 'fa',
+            langTitle: 'فارسی',
+        },
+        {
+            lang: '日本語',
+            articles: '1 353 000+ 記事',
+            langCode: 'ja',
+            langTitle: '日本語',
+        },
+        {
+            lang: 'Français',
+            articles: '2 476 000+ articles',
+            langCode: 'fr',
+            langTitle: 'Français',
+        },
+        {
+            lang: 'Español',
+            articles: '1 822 000+ artículos',
+            langCode: 'es',
+            langTitle: 'Español',
+
+        },
+        {
+            lang: '中文',
+            articles: '1 322 000+ 条目 / 條目',
+            langCode: 'zh',
+            langTitle: '中文',
+        },
+        {
+            lang: 'Português',
+            articles: '1 096 000+ artigos',
+            langCode: 'pt',
+            langTitle: 'Português',
+        }
+    ]
+    const megalanglist = 
+    [
+        "Polski",
+        "العربية",
+        "Deutsch",
+        "English",
+        "Español",
+        "Français",
+        
+    ]
     return (
         <body>
             <header>
@@ -21,55 +96,16 @@ export default function Homepage() {
             <main>
                 <div id='graphic-box'>
                     <div id='languages-graphic'>
-                        <a href='#' class='language-box'>
-                            <div class='lang-heading'>English</div>
-                            <div class='lang-articles'>6 585 000+ articles</div>
-                        </a>
-
-                        <a href='#' class='language-box'>
-                            <div class='lang-heading'>Русский</div>
-                            <div class='lang-articles'>1 874 000+ статей</div>
-                        </a>
-
-                        <a href='#' class='language-box'>
-                            <div class='lang-heading'>Deutsch</div>
-                            <div class='lang-articles'>2 749 000+ Artikel</div>
-                        </a>
-
-                        <a href='#' class='language-box'>
-                            <div class='lang-heading'>Italiano</div>
-                            <div class='lang-articles'>1 785 000+ voci</div>
-                        </a>
-
-                        <a href='#' class='language-box'>
-                            <div class='lang-heading'>فارسی</div>
-                            <div class='lang-articles'>مقاله 000 940+</div>
-                        </a>
-
-                        <a href='#' class='language-box'>
-                            <div class='lang-heading'>日本語</div>
-                            <div class='lang-articles'>1 353 000+ 記事</div>
-                        </a>
-
-                        <a href='#' class='language-box'>
-                            <div class='lang-heading'>Français</div>
-                            <div class='lang-articles'>2 476 000+ articles</div>
-                        </a>
-
-                        <a href='#' class='language-box'>
-                            <div class='lang-heading'>Español</div>
-                            <div class='lang-articles'>1 822 000+ artículos</div>
-                        </a>
-
-                        <a href='#' class='language-box'>
-                            <div class='lang-heading'>中文</div>
-                            <div class='lang-articles'>1 322 000+ 条目 / 條目</div>
-                        </a>
-
-                        <a href='#' class='language-box'>
-                            <div class='lang-heading'>Português</div>
-                            <div class='lang-articles'>1 096 000+ artigos</div>
-                        </a>
+                    {
+                        langList.map((lang,i) => {
+                            return (
+                                <a href='#' class='language-box' key={i}>
+                                    <div class='lang-heading'>{lang.lang}</div>
+                                    <div class='lang-articles'>{lang.articles}</div>
+                                </a>
+                            )
+                        })
+                    }
                     </div>
                 </div>
 
