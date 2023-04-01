@@ -1,0 +1,829 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300&family=Montserrat&display=swap');
+
+/* Merriweather */
+/* Montserrat */
+
+:root {
+  --blue: #36c;
+  --hover-grey: #eaecf0;
+  --border-grey: #c8ccd1;
+  --lang-grey: #f8f9fa
+}
+
+header {
+  display: flex;
+}
+
+body {
+  margin: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+
+.header-img-cont {
+  height: 100%;
+  width: 100%;
+  display: none;
+}
+
+#title-container {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+
+  font-family: 'Merriweather', sans-serif;
+  width: fit-content;
+  margin-top: 3em;
+}
+
+#main-heading {
+  font-size: 2rem;
+  font-weight: 500;
+}
+
+#main-heading>span {
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+#sub-heading {
+  font-size: 0.8rem;
+}
+
+#graphic-box {
+
+  margin: auto;
+  width: 600px;
+
+  display: flex;
+  justify-content: space-between;
+
+  background-image: url("images/wiki-globe.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 37.5%;
+}
+
+#languages-graphic {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0 300px;
+  width: 100%;
+  flex-direction: column;
+
+  margin: 1.8em 0;
+  max-height: 380px;
+}
+
+.language-box {
+  display: flex;
+  flex-direction: column;
+  margin: 0.8em 0;
+  height: 40px;
+  width: 150px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.language-box:hover {
+  background-color: var(--hover-grey);
+  transition: 100ms;
+  text-decoration: underline;
+}
+
+.lang-heading {
+  width: fit-content;
+
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--blue);
+}
+
+.lang-articles {
+  font-size: 0.8rem;
+  text-align: center;
+  color: #767676;
+}
+
+/* Doing this because idk how to make a loop in css :/ */
+
+#languages-graphic>.language-box:nth-child(1) {
+  position: relative;
+  left: 5em;
+}
+
+#languages-graphic>.language-box:nth-child(2) {
+  position: relative;
+  left: 1em;
+}
+
+#languages-graphic>.language-box:nth-child(3) {
+  position: relative;
+  left: 0;
+}
+
+#languages-graphic>.language-box:nth-child(4) {
+  position: relative;
+  left: 1em;
+}
+
+#languages-graphic>.language-box:nth-child(5) {
+  position: relative;
+  left: 5em;
+}
+
+#languages-graphic>.language-box:nth-child(6) {
+  position: relative;
+  right: 5em;
+}
+
+#languages-graphic>.language-box:nth-child(7) {
+  position: relative;
+  right: 1em;
+}
+
+#languages-graphic>.language-box:nth-child(8) {
+  position: relative;
+  right: 0;
+}
+
+#languages-graphic>.language-box:nth-child(9) {
+  position: relative;
+  right: 1em;
+}
+
+#languages-graphic>.language-box:nth-child(10) {
+  position: relative;
+  right: 5em
+}
+
+#searchbar {
+  margin: auto;
+  width: 500px;
+  height: 50px;
+  display: flex;
+
+}
+
+#search-box {
+  display: flex;
+  flex: 9;
+}
+
+#search-box>input {
+  flex: 9;
+}
+
+#search-box>a {
+  display: flex;
+  flex: 1;
+  align-items: center;
+  justify-content: center;
+
+  border-bottom: solid 1px;
+  border-top: solid 1px;
+  border-right: solid 1px;
+  border-color: var(--border-grey);
+  font-size: 0.8rem;
+}
+
+#search-box>input {
+
+  border: none;
+
+  border-bottom: solid 1px;
+  border-top: solid 1px;
+  border-left: solid 1px;
+  border-color: var(--border-grey);
+}
+
+#searchbar>a {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#search-btn {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  box-sizing: border-box;
+
+  border-bottom: solid 1px;
+  border-top: solid 1px;
+  border-color: var(--border-grey);
+  background-color: var(--blue);
+  color: #fff;
+  font-weight: 700;
+
+}
+
+/* google icon */
+
+.material-symbols-outlined {
+  font-variation-settings:
+    'FILL'0,
+    'wght'400,
+    'GRAD'0,
+    'opsz'48
+}
+
+#lang-mega-box {
+  width: 80%;
+  margin: auto;
+  margin-top: 3em;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  border-top: solid 1px;
+  border-color: var(--border-grey);
+  background-color: var(--lang-grey);
+}
+
+
+#lang-mega-box>label {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: -1.5em;
+  width: 300px;
+
+  background-color: #f8f9fa;
+  color: var(--blue);
+  font-weight: 700;
+  border: solid 1px;
+  border-color: #000;
+  padding: 0.5em;
+  font-size: 0.9rem;
+}
+
+#lang-mega-box>label:hover {
+  background-color: #fff;
+}
+
+#lang-mega-box>input,
+.lang-cont,
+#other-box {
+  display: none;
+  transition: 100ms;
+}
+
+
+/* lang-cont when active */
+#lang-mega-box>input:checked~.lang-cont {
+  width: 96%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#lang-mega-box>input:checked~#other-box {
+  width: 100%;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+}
+
+.lang-art-box {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+}
+
+.lang-art-box:first-child {
+  margin-top: 1em;
+}
+
+.lang-art-box:last-child {
+  margin-bottom: 1em;
+}
+
+.lang-art-head {
+  align-self: center;
+  z-index: 1;
+  padding: 0 1em;
+  background-color: var(--lang-grey);
+  margin-bottom: -0.5em;
+}
+
+.lang-art-cont {
+  width: 100%;
+  padding-top: 1em;
+  border-top: solid 1px;
+  border-color: var(--border-grey);
+}
+
+.lang-art-cont>ul {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  flex-wrap: wrap;
+
+  list-style-type: none;
+}
+
+.lang-art-cont>ul>li>a {
+  color: var(--blue);
+}
+
+.lang-art-cont>ul>li>a:hover {
+  text-decoration: underline;
+}
+
+
+#other-box>a {
+  color: var(--blue);
+  font-weight: 700;
+  padding: 1em;
+}
+
+footer {
+  width: 98%;
+  margin: auto;
+  box-sizing: border-box;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  padding: 1em;
+  border-top: solid 1px;
+  border-color: var(--border-grey);
+}
+
+#link-box {
+  display: grid;
+  grid-template-columns: 2fr 5fr;
+  grid-template-rows: auto auto;
+  grid-template-areas:
+    'wiki-found wiki-apps'
+    'wiki-download wiki-apps';
+
+  max-width: 1300px;
+  margin: auto;
+  margin-top: 2em;
+  margin-bottom: 3em;
+  flex: 1;
+  width: 100%;
+}
+
+#wiki-found {
+  grid-area: wiki-found;
+  padding: 0.5em;
+  display: flex;
+}
+
+.wiki-found-img-cont {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+
+.wiki-found-img-cont>img {
+  width: 40px;
+  padding: 1em 0;
+}
+
+
+.wiki-found-text-cont {
+  flex: 7;
+  padding: 1em;
+  font-size: 0.85rem;
+  color: #565656;
+}
+
+.wiki-found-text-cont>a {
+  color: var(--blue);
+}
+
+#wiki-download {
+  display: flex;
+  grid-area: wiki-download;
+  align-items: center;
+  padding: 0.5em;
+  border-radius: 5px;
+  background-color: #f8f9fa;
+}
+
+.download-img-cont {
+  flex: 1;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.download-img-cont>img {
+  width: 25px;
+
+  border-radius: 3px;
+  box-shadow: 0 0.5px;
+  background-color: #fff;
+  padding: 5px;
+  margin-top: 2em;
+}
+
+.download-text-cont {
+  flex: 7;
+  font-size: 0.85rem;
+  padding: 0 1em 1em 1em;
+  display: flex;
+  flex-direction: column;
+  color: #565656;
+}
+
+#download-heading {
+  color: var(--blue);
+  font-weight: 700;
+  align-self: flex-start;
+  width: fit-content;
+}
+
+#download-body {
+  padding: 1em 0;
+  width: fit-content;
+}
+
+#download-btn-cont {
+  display: flex;
+}
+
+#download-btn-cont>img {
+  width: 120px;
+}
+
+#wiki-apps {
+  display: flex;
+  flex-wrap: wrap;
+  grid-area: wiki-apps;
+  margin: 1em 2em;
+}
+
+.app-cont {
+  margin: 1em 0.5em;
+  display: flex;
+  flex: max(200px, 100%/4);
+}
+
+.app-cont:hover {
+  background-color: #eaecf0;
+  transition: 100ms;
+}
+
+.app-icon {
+  width: 30px;
+  height: 30px;
+  padding: 0 0.5em;
+}
+
+.app-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.app-name {
+  font-size: 0.9rem;
+  color: var(--blue);
+  padding-bottom: 0.5em;
+}
+
+.app-desc {
+  font-size: 0.9rem;
+  color: #696f75;
+}
+
+#terms-box {
+  margin: auto;
+  padding-top: 2em;
+  width: 100%;
+  border-top: solid 1px;
+  border-color: var(--border-grey);
+  text-align: center;
+  font-size: 0.8rem;
+}
+
+#terms-box>a {
+  color: var(--blue);
+}
+
+
+
+/* CENTER GRAPHIC */
+
+@media screen and (max-width: 620px) {
+
+  header {
+    width: fit-content;
+    margin: auto;
+    margin-top: 2.5em;
+  }
+
+  .header-img-cont {
+    display: flex;
+    flex: 1;
+  }
+
+  .header-img-cont>img {
+    height: 3.5rem;
+    padding: 0 0.5em;
+  }
+
+
+  #title-container {
+    margin-top: 0;
+    flex: 4;
+  }
+
+  #graphic-box {
+    background-image: none;
+    width: 100%;
+    order: 2 !important;
+  }
+
+  #languages-graphic {
+    display: grid;
+    gap: 0;
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .language-box {
+    width: 100%;
+    height: 100%;
+    justify-content: space-evenly;
+    left: 0 !important;
+    right: 0 !important;
+  }
+
+
+  #searchbar {
+    width: 95%;
+    margin-top: 2em;
+    order: 1 !important;
+  }
+
+  #lang-mega-box {
+    order: 3 !important;
+    width: 100%;
+  }
+
+  #lang-cont {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width:350px) {
+
+  #graphic-box {
+    height: 650px;
+  }
+
+  #languages-graphic {
+    display: grid;
+    gap: 0;
+    grid-template-columns: 1fr;
+  }
+
+  #lang-mega-box>label {
+    width: 95%;
+  }
+
+}
+
+
+
+/* LANGUAGE LISTS */
+
+@media screen and (max-width: 10000px) {
+  #articles-106>.lang-art-cont>ul {
+    height: 4rem;
+  }
+
+  #articles-105>.lang-art-cont>ul {
+    height: 10rem;
+  }
+
+  #articles-104>.lang-art-cont>ul {
+    height: 20rem;
+  }
+
+  #articles-103>.lang-art-cont>ul {
+    height: 22rem;
+  }
+
+  #articles-102>.lang-art-cont>ul {
+    height: 6rem;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  #articles-106>.lang-art-cont>ul {
+    height: 5rem;
+  }
+
+  #articles-105>.lang-art-cont>ul {
+    height: 12rem;
+  }
+
+  #articles-104>.lang-art-cont>ul {
+    height: 24rem;
+  }
+
+  #articles-103>.lang-art-cont>ul {
+    height: 26rem;
+  }
+
+  #articles-102>.lang-art-cont>ul {
+    height: 8rem;
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  #articles-106>.lang-art-cont>ul {
+    height: 6rem;
+  }
+
+  #articles-105>.lang-art-cont>ul {
+    height: 16rem;
+  }
+
+  #articles-104>.lang-art-cont>ul {
+    height: 28rem;
+  }
+
+  #articles-103>.lang-art-cont>ul {
+    height: 32rem;
+  }
+
+  #articles-102>.lang-art-cont>ul {
+    height: 10rem;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  #articles-106>.lang-art-cont>ul {
+    height: 8rem;
+  }
+
+  #articles-105>.lang-art-cont>ul {
+    height: 20rem;
+  }
+
+  #articles-104>.lang-art-cont>ul {
+    height: 37rem;
+  }
+
+  #articles-103>.lang-art-cont>ul {
+    height: 42rem;
+  }
+
+  #articles-102>.lang-art-cont>ul {
+    height: 12rem;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  #articles-106>.lang-art-cont>ul {
+    height: 12rem;
+  }
+
+  #articles-105>.lang-art-cont>ul {
+    height: 30rem;
+  }
+
+  #articles-104>.lang-art-cont>ul {
+    height: 58rem;
+  }
+
+  #articles-103>.lang-art-cont>ul {
+    height: 64rem;
+  }
+
+  #articles-102>.lang-art-cont>ul {
+    height: 20rem;
+  }
+}
+
+@media screen and (max-width: 225px) {
+
+  #articles-106>.lang-art-cont>ul,
+  #articles-105>.lang-art-cont>ul,
+  #articles-104>.lang-art-cont>ul,
+  #articles-103>.lang-art-cont>ul,
+  #articles-102>.lang-art-cont>ul {
+    flex-wrap: nowrap;
+    height: fit-content;
+  }
+}
+
+/*  FOOTER */
+
+@media screen and (max-width: 1030px) {
+
+  footer {
+    width: 100%;
+  }
+
+  #link-box {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto;
+    grid-template-areas:
+      'wiki-found'
+      'wiki-apps'
+      'wiki-download';
+  }
+
+  #wiki-apps {
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  #wiki-found {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .app-cont {
+    flex: max(165px, 100%/4);
+  }
+
+  #wiki-download {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .download-text-cont {
+    align-items: center;
+  }
+
+  #download-heading {
+    align-self: center;
+    padding: 1em 0;
+  }
+
+  #download-body {
+    align-self: center;
+    text-align: center;
+  }
+
+  .wiki-found-text-cont {
+    align-items: center;
+    text-align: center;
+  }
+}
