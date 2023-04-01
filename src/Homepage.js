@@ -1,7 +1,20 @@
 import wikiLogo from './images/wiki-globe.png';
 import googleplay from './images/footer/google_play.png';
+import appstore from './images/footer/app-store.png';
 import wiki_w from './images/footer/wiki-w.png';
-import wiki_media from './images/footer/wiki-media.png';
+import wiki_media from './images/footer/wikimedia-found.png';
+import commons from './images/other-wikis/commons.png';
+import mediawiki from './images/other-wikis/mediawiki.png';
+import metawiki from './images/other-wikis/metawiki.png';
+import wikibooks from './images/other-wikis/wikibooks.png';
+import wikivoyage from './images/other-wikis/wikivoyage.png';
+import wiktionary from './images/other-wikis/wiktionary.png';
+import wikidata from './images/other-wikis/wikidata.png';
+import wikinews from './images/other-wikis/wikinews.png';
+import wikiquote from './images/other-wikis/wikiquote.png';
+import wikisource from './images/other-wikis/wikisource.png';
+import wikispecies from './images/other-wikis/wikispecies.png';
+import wikiversity from './images/other-wikis/wikiversity.png';
 
 export default function Homepage() {
 
@@ -1626,7 +1639,8 @@ export default function Homepage() {
                 <div id='link-box'>
                     <div id='wiki-found'>
                         <div class='wiki-found-img-cont'>
-                            <img src='images\footer\wikimedia-found.png' alt='wiki-foundation' />
+                        <img src={wiki_media} />
+                            {/* <img src='images\footer\wikimedia-found.png' alt='wiki-foundation' /> */}
                         </div>
                         <div class='wiki-found-text-cont'>
                             Wikipedia is hosted by the Wikimedia Foundation, a non-profit organization that also hosts a
@@ -1638,7 +1652,7 @@ export default function Homepage() {
                     <div id='wiki-download'>
                         <div class='download-img-cont'>
                             <img src={wiki_w} />
-                            <img src='images\footer\wiki-w.png' alt='wiki-w' />
+                            {/* <img src='images\footer\wiki-w.png' alt='wiki-w' /> */}
                         </div>
                         <div class='download-text-cont'>
                             <div id='download-heading'>Download Wikipedia for Android or iOS</div>
@@ -1648,14 +1662,18 @@ export default function Homepage() {
                             </div>
                             <div id='download-btn-cont'>
                                 <img src={googleplay} />
-                                <img src='/images/footer/app-store.png' />
+                                {/* <img src='/images/footer/app-store.png' /> */}
+                            </div>
+                            <div id='download-btn-cont'>
+                                <img src={appstore} />
                             </div>
                         </div>
                     </div>
 
                     <div id='wiki-apps'>
                         <div class='app-cont'>
-                            <img src='images/other-wikis/commons.png' alt='commons' class='app-icon' />
+                            {/* <img src='images/other-wikis/commons.png' alt='commons' class='app-icon' /> */}
+                            <img src={commons} />
                             <div class='app-info'>
                                 <div class='app-name'>Commons</div>
                                 <div class='app-desc'>Freely usable photos & more</div>
@@ -1663,7 +1681,8 @@ export default function Homepage() {
                         </div>
 
                         <div class='app-cont'>
-                            <img src='images/other-wikis/wikivoyage.png' alt='voyage' class='app-icon' />
+                            {/* <img src='images/other-wikis/wikivoyage.png' alt='voyage' class='app-icon' /> */}
+                            <img src={wikivoyage} />
                             <div class='app-info'>
                                 <div class='app-name'>Wikivoyage</div>
                                 <div class='app-desc'>Free travel guide</div>
@@ -1671,7 +1690,8 @@ export default function Homepage() {
                         </div>
 
                         <div class='app-cont'>
-                            <img src='images/other-wikis/wiktionary.png' alt='wiktionary' class='app-icon' />
+                        <img src={wiktionary} />
+                            {/* <img src='images/other-wikis/wiktionary.png' alt='wiktionary' class='app-icon' /> */}
                             <div class='app-info'>
                                 <div class='app-name'>Wiktionary</div>
                                 <div class='app-desc'>Free Dictionary</div>
@@ -1679,7 +1699,8 @@ export default function Homepage() {
                         </div>
 
                         <div class='app-cont'>
-                            <img src='images/other-wikis/wikibooks.png' alt='wikibooks' class='app-icon' />
+                            {/* <img src='images/other-wikis/wikibooks.png' alt='wikibooks' class='app-icon' /> */}
+                            <img src={wikibooks} />
                             <div class='app-info'>
                                 <div class='app-name'>Wikibooks</div>
                                 <div class='app-desc'>Free textbooks</div>
@@ -1687,7 +1708,8 @@ export default function Homepage() {
                         </div>
 
                         <div class='app-cont'>
-                            <img src='images/other-wikis/wikinews.png' alt='wikinews' class='app-icon' />
+                            {/* <img src='images/other-wikis/wikinews.png' alt='wikinews' class='app-icon' /> */}
+                            <img src={wikinews} />
                             <div class='app-info'>
                                 <div class='app-name'>Wikinews</div>
                                 <div class='app-desc'>Free news source</div>
@@ -1695,7 +1717,8 @@ export default function Homepage() {
                         </div>
 
                         <div class='app-cont'>
-                            <img src='images/other-wikis/wikidata.png' alt='wikidata' class='app-icon' />
+                            {/* <img src='images/other-wikis/wikidata.png' alt='wikidata' class='app-icon' /> */}
+                            <img src={wikidata} />
                             <div class='app-info'>
                                 <div class='app-name'>Wikidata</div>
                                 <div class='app-desc'>Free knowledge base</div>
@@ -1703,7 +1726,8 @@ export default function Homepage() {
                         </div>
 
                         <div class='app-cont'>
-                            <img src='images/other-wikis/wikiversity.png' alt='wikiversity' class='app-icon' />
+                        <img src={wikiversity} />
+                            {/* <img src='images/other-wikis/wikiversity.png' alt='wikiversity' class='app-icon' /> */}
                             <div class='app-info'>
                                 <div class='app-name'>Wikiversity</div>
                                 <div class='app-desc'>Free course materials</div>
@@ -1711,7 +1735,8 @@ export default function Homepage() {
                         </div>
 
                         <div class='app-cont'>
-                            <img src='images/other-wikis/wikiquote.png' alt='wikiquote' class='app-icon' />
+                        <img src={wikiquote} />
+                            {/* <img src='images/other-wikis/wikiquote.png' alt='wikiquote' class='app-icon' /> */}
                             <div class='app-info'>
                                 <div class='app-name'>Wikiquote</div>
                                 <div class='app-desc'>Free quote compendium</div>
@@ -1719,7 +1744,8 @@ export default function Homepage() {
                         </div>
 
                         <div class='app-cont'>
-                            <img src='images/other-wikis/mediawiki.png' alt='mediawiki' class='app-icon' />
+                        <img src={mediawiki} />
+                            {/* <img src='images/other-wikis/mediawiki.png' alt='mediawiki' class='app-icon' /> */}
                             <div class='app-info'>
                                 <div class='app-name'>MediaWiki</div>
                                 <div class='app-desc'>Free & open wiki application</div>
@@ -1727,7 +1753,8 @@ export default function Homepage() {
                         </div>
 
                         <div class='app-cont'>
-                            <img src='images/other-wikis/wikisource.png' alt='wikisource' class='app-icon' />
+                        <img src={wikisource} />
+                            {/* <img src='images/other-wikis/wikisource.png' alt='wikisource' class='app-icon' /> */}
                             <div class='app-info'>
                                 <div class='app-name'>Wikisource</div>
                                 <div class='app-desc'>Free library</div>
@@ -1735,7 +1762,8 @@ export default function Homepage() {
                         </div>
 
                         <div class='app-cont'>
-                            <img src='images/other-wikis/wikispecies.png' alt='wikispecies' class='app-icon' />
+                        <img src={wikispecies} />
+                            {/* <img src='images/other-wikis/wikispecies.png' alt='wikispecies' class='app-icon' /> */}
                             <div class='app-info'>
                                 <div class='app-name'>Wikispecies</div>
                                 <div class='app-desc'>Free species directory</div>
@@ -1743,7 +1771,8 @@ export default function Homepage() {
                         </div>
 
                         <div class='app-cont'>
-                            <img src='images/other-wikis/metawiki.png' alt='metawiki' class='app-icon' />
+                        <img src={metawiki} />
+                            {/* <img src='images/other-wikis/metawiki.png' alt='metawiki' class='app-icon' /> */}
                             <div class='app-info'>
                                 <div class='app-name'>Meta-wiki</div>
                                 <div class='app-desc'>Community coordination and documentation</div>
